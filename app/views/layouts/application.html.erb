@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <meta charset="utf-8">
+  
+  <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <%= render 'layouts/meta' %>
+  <%= render 'layouts/shim' %>
+  
 </head>
+
 <body>
 
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+		<%= render 'layouts/menu' %>
+
+<!-- conteudo - inicio -->
 <%= yield %>
+
+<!-- conteudo -fim -->
+
+<!-- footer -->
+<%= render 'layouts/footer' %>
+    </div>
 
 </body>
 </html>
