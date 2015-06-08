@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
-
   get 'livro' => 'static_pages#livro'
-
   get 'contato' => 'static_pages#contato'
-
   get 'help' => 'static_pages#help'
   
   

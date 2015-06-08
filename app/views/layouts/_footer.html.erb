@@ -1,42 +1,21 @@
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-6 column">
-					<ul>
-						<li>
-							Mapa do Site
-						</li>
-						<ul>
-							<li><%= link_to "Home", root_path %></li>
-							<li><%= link_to "Livro", livro_path %></li>
-							<li><%= link_to "Contato", contato_path %></li>
-							<li><%= link_to "Help", help_path %></li>							
-						</ul>
-					</ul>
-				</div>
-				<div class="col-md-6 column">
-					<dl class="dl-horizontal">
-						<dt>
-							Objetivo
-						</dt>
-						<dd>
-							Projeto em Ruby and Rails
-						</dd>
-						<dt>
-							Descrição
-						</dt>
-						<dd>
-							Projeto para disciplina RAD - 2015.1
-						</dd>
-						<dt>
-							Equipe							
-						</dt>
-						<dd>
-							Natacha Targino<br>
-							Jaqueline Fernandes
-						</dd>
-					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
+ <footer class="footer">
+   <hr>
+    <small>
+     	<b>Objetivo:</b>	Projeto em Ruby and Rails<br>
+        <b>Descrição:</b>	Projeto para disciplina RAD - 2015.1<br>
+     	<b>Equipe:</b>	Natacha Targino, Jaqueline Fernandes
+    </small>
+    <nav>
+      <ul>
+		<li>
+			Mapa do Site
+		</li>
+      	<ul>
+        	<li><%= link_to "Home", root_path %></li>
+    			<li><%= link_to "Livro", livro_path %></li>
+    			<li><%= link_to "Contato", contato_path %></li>
+    			<li><%= link_to "Help", help_path %></li>
+    	  </ul>
+  		</ul>
+    </nav>
+  </footer>

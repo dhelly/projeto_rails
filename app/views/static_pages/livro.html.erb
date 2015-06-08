@@ -1,3 +1,46 @@
 <% provide(:title, "Livro") %>
-<h1>StaticPages#livro</h1>
-<p>Find me in app/views/static_pages/livro.html.erb</p>
+<div class="content">
+    <br>
+ <p>Categoria: Aventura <br></p>
+
+
+    <ul class="produtos" id="produtos">
+     
+        <li class="produto">
+            <%= link_to image_tag("A-Aldeia-Aerea-Julio-Verne.jpg", alt: "Livro A Aldeia Aérea - Júlio Verne"), "#" %>
+            <h3>A Aldeia Aérea &#8211; Júlio Verne</h3>
+        </li>
+     
+        <li class="produto">
+            <%= link_to image_tag("Quarup-Antonio-Callado.jpg", alt: "Livro Quarup - Antônio Callado"), "#" %>
+            <h3>Quarup &#8211; Antônio Callado</h3>
+        </li>
+     
+        <li class="produto">
+            <%= link_to image_tag("Revivente-Ken-Grimwood.jpg", alt: "Livro Revivente - Ken Grimwood"), "#" %>
+            <h3>Revivente &#8211; Ken Grimwood</h3>
+        </li>
+     
+        <li class="produto">
+            <%= link_to image_tag("Mercador-de-Livros-Malditos.jpg", alt: "Livro O Mercador de Livros Malditos - Marcello Simoni"), "#" %>
+            <h3>O Mercador de Livros Malditos &#8211; Marcello Simoni</h3>
+        </li>        
+    </ul>
+
+</div>
+
+<div class="opcoes">
+	<h3 class="sb-title">Categorias</h3>
+
+	<ul class="categ">
+		<li class="item">Aventura</li>
+		<li class="item">Comédia</li>
+		<li class="item">Didáticos</li>
+		<li class="item">AutoAjuda</li>
+		<li class="item">Biografia e Memórias</li>
+	</ul>
+</div>
+<div class="outra">
+	
+
+</div>

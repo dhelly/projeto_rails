@@ -1,2 +1,79 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* footer */
+.footer{
+  clear: both;
+  margin-top: 45px;
+  padding-top: 5px;
+  color: #777;
+  a{
+    color: #555;
+    &:hover{
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul{
+    float: right;
+    list-style: none;
+    li{
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+
+/* livros */
+.content{
+  margin:0;
+  width: 100%;
+  .produtos{
+    clear: both;
+  	list-style: outside none;
+  	margin: 0 0 14px;
+  	padding: 0;
+  	position: relative;
+  	
+  	li{
+  	  float: left;
+      height: 320px;
+      margin: 0 60px 100px 0;
+      padding: 0 0 60px;
+      position: relative;
+      text-align: center;
+      width: 176px;
+  	}
+  }
+}
+
+/* categoria */
+.opcoes{
+  float: left;
+	text-align: center;
+	
+	.sub-title{
+	 font-size: 22px;
+   line-height: 18px;
+   margin-bottom: 12px;
+   padding-bottom: 5px; 
+	}
+  .categ{
+	  list-style-position: inside;
+  	list-style: outside none;
+  	padding-left: 0px;
+  	.item{
+  	  padding-bottom: 10px; 
+  	  padding-top: 10px;
+  	}
+  }
+}
+
+.espaco{
+  clear: both;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
