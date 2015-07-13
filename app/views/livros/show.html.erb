@@ -1,0 +1,57 @@
+<div class="navbar navbar-default" role="navigation">
+  <div style="margin:20px; padding-left:90px; padding-right:90px;">
+    
+    <p style="text-align:right;"><%= link_to 'Back', livros_path %></p>
+
+<h1><%=t :detalhesl %></h1>
+<br>
+<table>
+  
+  <tr>
+  <td>
+
+<p>
+  <strong>Isbn:</strong>
+  <%= @livro.isbn %>
+</p>
+</td>
+<td rowspan="4">
+  <p>
+  <%= image_tag @livro.picture,
+            :alt => "Descricao img",
+            :id => "id_img",
+            :width => "130px",
+            :height => "200px" %>
+</p>
+  
+</td>
+
+</tr>
+  <tr>
+  <td>
+<p>
+  <strong><%=t :titulo %>:</strong>
+  <%= @livro.titulo %>
+</p>
+</td>
+</tr>
+  <tr>
+  <td>
+<p>
+  <strong><%=t :autor %>:</strong>
+  <%= @livro.autor %>
+</p>
+</td>
+</tr>
+  <tr>
+  <td>
+<p>
+  <strong><%=t :editora %>:</strong>
+  <%= @livro.editora %>
+</p>
+</td>
+</tr>
+
+</table>
+</div>
+</div>

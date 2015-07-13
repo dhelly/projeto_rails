@@ -1,0 +1,44 @@
+<% provide(:title, "Leituras") %>
+<div class="navbar navbar-default" role="navigation">
+  <div style="margin:20px; padding-left:90px; padding-right:90px;">
+<br>
+<h1 align="center"><%=t :mleituras %></h1>
+<br>
+
+<% if user_signed_in? %> 
+<%= link_to 'Nova Leitura', new_leitura_path %>
+<br><br>
+  <table>
+    <thead>
+      <tr>
+        <th><%=t :title %></th>
+        <th><%=t :autor %></th>
+        <th><%=t :mes %></th>
+        <th colspan="2"></th>
+      </tr>
+    </thead>
+  
+    <% @leit = Leitura.where(user_id: current_user.id)%>
+      <tbody>
+        <% @leit.each do |leitura| %>
+          <tr>
+            <td><%= leitura.titulo %></td>
+            <td><%= leitura.autor %></td>
+            <td><%= leitura.mes %></td>
+            <td><%= link_to 'Ver', leitura %></td>
+            <td><%= link_to 'Excluir', leitura, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+         
+     
+    <% end %>
+     </tbody>
+     </table>
+<%else%>
+    <h1><%=t :rlogin %></h1>
+<% end %>
+
+
+<br>
+<br>
+</div>
+</div>

@@ -1,0 +1,37 @@
+<div class="navbar navbar-default" role="navigation">
+  <div style="margin:20px; padding-left:90px; padding-right:90px;">
+    
+    <p style="text-align:right;"><%= link_to 'Edit', edit_leitura_path(@leitura) %> |
+<%= link_to 'Back', leituras_path %></p>
+
+<h1><%=t :dleituras %></h1>
+<br>
+
+<p>
+  <strong><%=t :title %>:</strong>
+  <%= @leitura.titulo %>
+</p>
+
+<p>
+  <strong><%=t :autor %>:</strong>
+  <%= @leitura.autor %>
+</p>
+
+<p>
+  <strong><%=t :mes %>:</strong>
+  <%= @leitura.mes %>
+</p>
+
+<p>
+  <strong><%=t :duracao %>:</strong>
+  <%= @leitura.duracao %>
+</p>
+
+<p>
+  <strong><%=t :observ %>:</strong>
+  <%= @leitura.observ %>
+</p>
+
+</div>
+</div>
+

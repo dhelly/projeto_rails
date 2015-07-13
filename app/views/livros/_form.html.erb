@@ -1,0 +1,15 @@
+<%= simple_form_for(@livro) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :isbn %>
+    <%= f.input :titulo %>
+    <%= f.input :autor %>
+    <%= f.input :editora %>
+    <%= f.input :picture %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

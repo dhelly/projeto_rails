@@ -1,10 +1,25 @@
 Rails.application.routes.draw do
+
+ 
+  resources :contatos
+
+  resources :leituras
+
+  resources :livros
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  devise_for :users
+  
   root 'static_pages#home'
-  get 'livro' => 'static_pages#livro'
-  get 'contato' => 'static_pages#contato'
+  get 'livros' => 'livros#index'
+  get 'contact' => 'contatos#new'
   get 'help' => 'static_pages#help'
+  get 'leituras' => 'leituras#index'
+  get 'index' => 'static_pages#home'
   
-  
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

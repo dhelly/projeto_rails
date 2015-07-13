@@ -13,18 +13,6 @@ end
     assert_select "title", "Home - #{@base_title}"
   end
 
-  test "should get livro" do
-    get :livro
-    assert_response :success
-    assert_select "title", "Livro - #{@base_title}"
-  end
-
-  test "should get contato" do
-    get :contato
-    assert_response :success
-    assert_select "title", "Contato - #{@base_title}"
-  end
-
   test "should get help" do
     get :help
     assert_response :success

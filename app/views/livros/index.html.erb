@@ -1,0 +1,25 @@
+<% provide(:title, "Livros") %>
+<div class="navbar navbar-default" role="navigation">
+  <div style="margin:20px; padding-left:90px; padding-right:90px;">
+<br>
+<h1 align="center"><%=t :livros %></h1>
+<br>
+  <div class="content">
+      <ul class="produtos" id="produtos">
+         <% @livros.each do |livro| %>
+         <li class="produto">
+            <%= image_tag livro.picture,
+            :alt => "Descricao img",
+            :id => "id_img",
+            :width => "200px",
+            :height => "300px" %>
+              <h3><%= livro.titulo %></h3>
+              <p><%= link_to 'Ver Sobre', livro %></p>
+          </li>
+           <% end %>
+      </ul>
+  
+  </div>
+<br>
+</div>
+</div>

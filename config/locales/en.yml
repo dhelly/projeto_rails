@@ -18,6 +18,48 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
 en:
+  active_admin:
+    edit: "Editar"
   hello: "Hello world"
+  livros: "Books"
+  detalhesl: "Book's Details"
+  novo: "new"
+  editar: "edit"
+  editora: "Publishing House"
+  contato: "Contact"
+  menviada: "Message Sent!"
+  mleituras: "My Readings"
+  dleituras: "Details Readings"
+  ctexto: "Tune in to the best of literature, movies, music, series, comics, games in one place."
+  detalhes: "show"
+  titulo: 'Title'
+  cleitura: 'Register Reading'
+  eleitura: 'Edit Reading'
+  autor: 'Author'
+  mes: "Month - End of Reading" 
+  duracao: "Duration of Reading"
+  rlogin: "Sing In"
+  observ: "Observation"
+  activerecord:
+    models:
+      contato: 'Contact' 
+      leitura: 'Reading'
+      livro: 'Books'
+    attributes:
+      contato:
+        nome: 'Name'
+        email: 'Email'
+        mensagem: "Message" 
+      leitura:
+        titulo: 'Title'
+        autor: 'Author'
+        mes: "Month" 
+        duracao: "Duration"
+        observ: "Observation"
+      livro:
+        isbn: 'ISBN'
+        titulo: 'Title'
+        autor: 'Author'
+        editora: "Publishing House"
+        picture: "Picture"

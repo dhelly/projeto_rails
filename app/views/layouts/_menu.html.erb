@@ -1,19 +1,27 @@
 <nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Projeto RAD</a>
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="/index">Projeto RAD</a>
 				</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><%= link_to "Home", root_path %></li>
-						<li><%= link_to "Livro", livro_path %></li>
-						<li><%= link_to "Contato", contato_path %></li>						
+						<li><%= link_to t('active_admin.edit'), livros_path %></li>
+						<li><%= link_to "Contato", contact_path %></li>						
 						<li><%= link_to "Help", help_path %></li>
-					</ul>
-					<form class="navbar-form navbar-right" role="search">
-						<div class="form-group">
-							<input class="form-control" type="text">
-						</div> <%= link_to "Pesquisar", livro_path, class: "btn btn-default" %>
-					</form>
-				</div>				
+         <% unless user_signed_in? %>
+            <li><%= link_to "Sign up", new_user_registration_path %></li>
+            <li><%= link_to "Log in", new_user_session_path %></li>
+          <%else%>
+            <li><%= link_to "Leituras", leituras_path %></li>
+            <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+          <%end%>
+          
+        </ul>
+   
+       <% if user_signed_in? %>
+      <p style="text-align:right; padding-top:15px">olá <%= current_user.email%></p>
+      <% end %>
+    </div>			
 			</nav>

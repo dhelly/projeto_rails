@@ -1,0 +1,13 @@
+
+<%provide(:title, "Contato")%>
+
+
+<%= simple_form_for @contato do |f| %>    
+    <%= f.input :nome %>
+    <%= f.input :email %>
+    <%= f.input :mensagem, as: :text %>
+  <%= f.button :submit %>
+<% end %>
+
+
+

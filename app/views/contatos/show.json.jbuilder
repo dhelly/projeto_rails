@@ -1,0 +1,1 @@
+json.extract! @contato, :nome, :email, :mensagem

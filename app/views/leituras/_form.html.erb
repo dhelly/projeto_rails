@@ -1,0 +1,18 @@
+<%provide(:title, "Leitura")%>
+
+<% if user_signed_in? %>
+  <%= simple_form_for @leitura do |f| %>
+    <%= f.input :titulo %>
+    <%= f.input :autor %>
+    <%= f.input :mes %>
+    <%= f.input :duracao %>
+    <%= f.input :observ %>
+    <%= f.input :user_id, :as => :hidden, input_html: { value: current_user.id }%>
+  <%= f.button :submit %>
+  <% end %>
+<%else%>
+    <h1><%=t :rlogin %></h1>
+<% end %>
+
+
+
