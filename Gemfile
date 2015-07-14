@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'devise'
+gem 'devise'#login
 
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin', github: 'activeadmin'#painelAdministrativo
 
-gem 'simple_form'
+gem 'simple_form'#formularios
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'

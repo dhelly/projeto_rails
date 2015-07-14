@@ -20,9 +20,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 en:
   active_admin:
-    edit: "Editar"
+    edit: "Edit"
+    back: "Back"
+    nleitura: "New Reading"
   hello: "Hello world"
   livros: "Books"
+  livrosver: "See Books"
+  leituras: "Readings"
+  flogin: "Log In"
+  dlogin: "Log Out"
+  elogin: "Edit Profile"
+  clogin: "Sing Up"
+  obj: "Goal"
+  desc: "Description"
+  olauser: "Hello"
+  eqp: "Team"
   detalhesl: "Book's Details"
   novo: "new"
   editar: "edit"

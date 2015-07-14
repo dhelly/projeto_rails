@@ -4,10 +4,10 @@
 <br>
 <h1 align="center"><%=t :livros %></h1>
 <br>
-  <div class="content">
-      <ul class="produtos" id="produtos">
+  <div id="livrosvisao">
+      <ul id="produtos">
          <% @livros.each do |livro| %>
-         <li class="produto">
+         <li id="produtosli">
             <%= image_tag livro.picture,
             :alt => "Descricao img",
             :id => "id_img",
@@ -23,3 +23,29 @@
 <br>
 </div>
 </div>
+
+<style>
+    /* livros */
+#livrosvisao{
+  margin:0;
+  width: 100%;
+}
+
+#produtos{
+    clear: both;
+  	list-style: outside none;
+  	margin: 0 0 14px;
+  	padding: 0;
+  	position: relative;
+}
+
+#produtosli{
+  	  float: left;
+      height: 320px;
+      margin: 0 60px 100px 0;
+      padding: 0 0 60px;
+      position: relative;
+      text-align: center;
+      width: 176px;
+  	}
+</style>

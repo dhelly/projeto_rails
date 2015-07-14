@@ -1,11 +1,11 @@
 class CreateLivros < ActiveRecord::Migration
   def change
     create_table :livros do |t|
-      t.string :isbn
-      t.string :titulo
-      t.string :autor
-      t.string :editora
-      t.string :picture
+      t.string :isbn, null: false, default: ""
+      t.string :titulo, null: false, default: ""
+      t.string :autor, null: false, default: ""
+      t.string :editora, null: false, default: ""
+      t.string :picture, null: false, default: ""
 
       t.timestamps
     end

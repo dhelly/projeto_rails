@@ -6,22 +6,22 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><%= link_to "Home", root_path %></li>
-						<li><%= link_to t('active_admin.edit'), livros_path %></li>
-						<li><%= link_to "Contato", contact_path %></li>						
+						<li><%= link_to t('livros'), livros_path %></li>
+						<li><%= link_to t('contato'), contact_path %></li>						
 						<li><%= link_to "Help", help_path %></li>
          <% unless user_signed_in? %>
-            <li><%= link_to "Sign up", new_user_registration_path %></li>
-            <li><%= link_to "Log in", new_user_session_path %></li>
+            <li><%= link_to t('clogin'), new_user_registration_path %></li>
+            <li><%= link_to t('flogin'), new_user_session_path %></li>
           <%else%>
-            <li><%= link_to "Leituras", leituras_path %></li>
-            <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-            <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+            <li><%= link_to t('leituras'), leituras_path %></li>
+            <li><%= link_to t('dlogin'), destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to t('elogin'), edit_user_registration_path %></li>
           <%end%>
           
         </ul>
    
        <% if user_signed_in? %>
-      <p style="text-align:right; padding-top:15px">olá <%= current_user.email%></p>
+      <p style="text-align:right; padding-top:15px"><%=t :olauser %>, <%= current_user.email%> !</p>
       <% end %>
     </div>			
 			</nav>

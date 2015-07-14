@@ -6,13 +6,12 @@
 <br>
 
 <% if user_signed_in? %> 
-<%= link_to 'Nova Leitura', new_leitura_path %>
+<%= link_to t('active_admin.nleitura'), new_leitura_path %>
 <br><br>
-  <table>
+  <table class="table">
     <thead>
       <tr>
         <th><%=t :title %></th>
-        <th><%=t :autor %></th>
         <th><%=t :mes %></th>
         <th colspan="2"></th>
       </tr>
@@ -23,7 +22,6 @@
         <% @leit.each do |leitura| %>
           <tr>
             <td><%= leitura.titulo %></td>
-            <td><%= leitura.autor %></td>
             <td><%= leitura.mes %></td>
             <td><%= link_to 'Ver', leitura %></td>
             <td><%= link_to 'Excluir', leitura, method: :delete, data: { confirm: 'Are you sure?' } %></td>

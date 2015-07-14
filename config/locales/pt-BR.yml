@@ -1,6 +1,20 @@
 pt-BR:
+  active_admin:
+    edit: "Editar"
+    back: "Voltar"
+    nleitura: "Nova Leitura"
   new: "novo"
   livros: "Livros"
+  livrosver: "Ver Livros"
+  leituras: "Leituras"
+  flogin: "Entrar"
+  dlogin: "Sair"
+  elogin: "Editar Login"
+  clogin: "Cadastrar-se"
+  obj: "Objetivo"
+  desc: "Descricao"
+  olauser: "Olá"
+  eqp: "Equipe"
   detalhesl: "Detalhes do Livro"
   contato: "Contato"
   menviada: "Menssagem Enviada!"
@@ -18,16 +32,19 @@ pt-BR:
   duracao: "Duracao da Leitura"
   rlogin: "Realize Login"
   observ: "Observacao"
+  created_at: "Criação"
   activerecord:
     models:
+      admin_user: 'Administradores'
       contact: 'Contato'  
-      leitura: 'Reading' 
+      leitura: 'Leitura' 
       livro: 'Livros'
+      user: 'Usuários'
     attributes:
       contato:
         nome: 'Nome'
         email: 'Email'
-        mensagem: "Menssagem" 
+        mensagem: "Mensagem" 
       leitura:
         titulo: 'Titulo'
         autor: 'Autor'

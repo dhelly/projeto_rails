@@ -1,21 +1,22 @@
  <footer class="footer">
    <hr>
-    <small>
-     	<b>Objetivo:</b>	Projeto em Ruby and Rails<br>
-        <b>Descrição:</b>	Projeto para disciplina RAD - 2015.1<br>
-     	<b>Equipe:</b>	Natacha Targino, Jaqueline Fernandes
-    </small>
-    <nav>
-      <ul>
-		<li>
-			Mapa do Site
-		</li>
-      	<ul>
-        	<li><%= link_to "Home", root_path %></li>
-    			<li><%= link_to "Livro", livros_path %></li>
-    			<li><%= link_to "Contato", contact_path %></li>
+    <nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header"  style="padding:10px">
+					  <small>
+                         	<b><%=t :obj%>:</b>	Projeto em Ruby and Rails<br>
+                            <b><%=t :desc %>:</b>	Projeto para disciplina RAD - 2015.1<br>
+                         	<b><%=t :eqp %>:</b>	Natacha Targino, Jaqueline Fernandes
+                      </small>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="float: right;  padding:10px">
+					<ul class="nav navbar-nav">
+						<li><%= link_to "Home", root_path %></li>
+    			<li><%= link_to t('livros'), livros_path %></li>
+    			<li><%= link_to t('contato'), contact_path %></li>
     			<li><%= link_to "Help", help_path %></li>
-    	  </ul>
-  		</ul>
-    </nav>
+         </ul>
+
+    </div>			
+			</nav>
   </footer>
+ 

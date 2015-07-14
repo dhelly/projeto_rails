@@ -1,6 +1,5 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
 /* footer */
 .footer{
   clear: both;
@@ -28,17 +27,20 @@
 
 
 /* livros */
-.content{
+#livrosvisao{
   margin:0;
   width: 100%;
-  .produtos{
+}
+
+#produtos{
     clear: both;
   	list-style: outside none;
   	margin: 0 0 14px;
   	padding: 0;
   	position: relative;
-  	
-  	li{
+}
+
+#produtosli{
   	  float: left;
       height: 320px;
       margin: 0 60px 100px 0;
@@ -47,8 +49,7 @@
       text-align: center;
       width: 176px;
   	}
-  }
-}
+
 
 /* categoria */
 .opcoes{
